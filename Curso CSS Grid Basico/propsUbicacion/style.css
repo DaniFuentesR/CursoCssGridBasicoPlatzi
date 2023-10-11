@@ -1,0 +1,45 @@
+.contenedor{
+
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 150px 150px 150px; /*Me permite es decirle a la grilla cuantas columnas va a tener y de que ancho va a ser cada columna*/
+    grid-template-rows: 75px 75px 75px /*Define automaticamente el tamaño de cualquier fila o columna que se cree*/;
+    place-content: center;
+    grid-template-areas: 
+    
+        "header header header"
+        "side main main"
+        "side main main"
+    ;
+}
+
+.item{
+    font-size: 4rem;
+}
+
+.item-1 {
+  
+        border: 5px solid #f8bbd0;
+        background-color: #ffeeff;
+        grid-area: header;
+    
+}
+
+.item-2 {
+  
+    border: 5px solid #bd8196;
+    background-color: #a08aa0;
+    /*grid-row: 2 / 4;  Con solo esta propiedad le indico de que linea a que linea de las filas va a ir ubicada, primer numero donde empieza seguido del / para separar el siguiente numero que es donde termina*/
+    grid-area: side;
+
+}
+
+.item-3 {
+  
+    border: 5px solid #a5acf8;
+    background-color: #6aa6f5;
+    /* grid-area: 2 / 2 /4 / 4; */
+    grid-area: main;
+
+}

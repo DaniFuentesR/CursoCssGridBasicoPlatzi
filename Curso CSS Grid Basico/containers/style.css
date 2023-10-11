@@ -1,0 +1,70 @@
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 100px; /*Me permite es decirle a la grilla cuantas columnas va a tener y de que ancho va a ser cada columna*/
+
+    grid-template-rows: 100px 200px; /*Hace lo mismo que grid-template-columns pero aplicandolo a las filas*/
+
+    grid-auto-columns: 150px /*Define automaticamente el tamaño de cualquier fila o columna que se cree*/;
+    grid-auto-flow: column; /*Modifica cómo se está llenando nuestra grilla - por defecto está en row. en column lo que hace es crear nuevas columnas en una sola fila*/
+    column-gap: 15px; /*Crea un espacio entre cada columna dentro del contenedor */
+    row-gap: 15px;
+}
+
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
+
+
+/*RETO*/
+
+.contenedor2{
+    
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+    grid-auto-flow: column;
+}
+
+.item1{
+    background-color: greenyellow;
+}
+
+.item4{
+    background-color: greenyellow;
+}
+
+.item2 {
+    background-color: rgb(103, 175, 103);
+}
+
+.item5 {
+    background-color: rgb(103, 175, 103);
+}
+
+.item3{
+    background-color: green;
+}
+.item6 {
+    background-color: green;
+}
+
+.item7 {
+    background-color: rgb(2, 59, 2);
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+
+

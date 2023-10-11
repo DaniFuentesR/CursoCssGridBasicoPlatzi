@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    place-content: center;
+    grid-template-areas: 
+    
+        "leftHeader header header"
+        "main main side"
+        "leftFooter footer rightFooter"
+    ;
+}
+
+.item1{
+    background-color: greenyellow;
+    grid-area: leftHeader side;
+}
+
+.item2{
+    background-color: green;
+    grid-area: header;
+}
+
+.item3{
+    background-color: rgb(2, 69, 2);
+    grid-area: main;
+}

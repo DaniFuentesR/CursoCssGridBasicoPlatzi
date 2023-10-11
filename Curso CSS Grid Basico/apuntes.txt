@@ -1,0 +1,85 @@
+Qué es un contendor? 
+    Un contenedor es el elemento que se va a convertir n una grilla. Es ese elemento que es como una canasta donde podemos ir metiendo cosas
+
+Item => Son los elementos que van dentro del contendor, pueden ser de cualquier tipo, links, botones, imagenes. Se van a convertir en grid-Item
+
+Lineas => Son los elementos que limitan y dividen las columnas de una grilla
+
+Celda => Unidad minima que debemos tener dentro de una grilla, esta celda normalmente solo ocupa una fila y una columna
+
+        Grupos de Celda => Se llaman track o areas 
+            
+           - Tracks: son los grupos de celdas que estan en una misma fila o en una misma columna
+
+           - Areas: Pueden usar varias filas y varias columnas a la vez. 
+
+
+Propiedades del Contenedor: 
+
+    - Display Grid 
+
+    - Grid- template
+
+    - Gaps
+
+    - Grid-auto
+
+
+Propiedades de Aineación de los Items: Son las propiedades que nos ayudan a alinear todos los items que viven dentro del contendor
+
+    - Justify-Items => Si la propiedad comienza con justify significa que nos ayuda a alinear de manera horizontal el item dentro del contenedor en que se encuentra 
+
+    - Align-Items => Align significa que alinea de manera vertical
+
+    - Place-Items => Place significa que alinea tanto horizontal como verticalmente 
+
+
+
+Propiedades de alineación del contenedor: Son las propiedades que ajustan la grilla completa al espacio en el que ella vive 
+
+- justify-content 
+
+- Align-content
+
+- Place-content
+
+
+
+Propiedades de alineación del ítem: Estas propiedades se le dan a cada uno de los elementos de nuestra grilla 
+
+- justify-self
+
+- Align-self 
+
+- Place-self 
+
+
+Propiedades de Ubicación: 
+
+   - grid-column-start
+   - grid-column-end => debo contar las lineas, no los espacios. Si tengo 3 columnas tengo 4 lineas
+
+
+   - grid-row-start
+   - grid-row-end 
+
+   - grid-area : Nos va a indicar de donde a donde va a ubicarse el elemento tanto en columna como en fila
+
+
+
+Funciones especiales:
+
+    - minmax: nos ayuda a declarar un tamaño minimo y maximo pera el ancho o alto de una celda, entonces así se pude jugar con su tamaño sin depender de su contenido
+
+    - repeat
+
+
+KeyWords especiales: 
+
+- fr o fracción => es una unidad de media que se usa en cssGrid que se usa para darle ancho o alto a filas y columnas, 1fr = 1 fracción de la grilla 
+
+- min-content => Ajusta el anchode la celda para que tengamos la columna lo mas fina que se pueda sin romper el contenido de esa columna
+
+- max-content => Hace lo contrario que min-content, ensancha las columnas para que el contenido se vea lo mas amplio y estirado posible 
+
+- auto-fill/auto-fit => Ayuda a que nuestra grilla ocupe el 100% del espacio que tiene. 
